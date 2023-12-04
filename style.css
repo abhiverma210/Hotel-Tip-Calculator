@@ -1,0 +1,98 @@
+/* style.css */
+
+body{
+    background: #333 url("image/cutlery.jpg") center center no-repeat;
+    background-size: cover;/* cover is used so that there one image completely fill in screen */
+    color: #532827;
+}
+/* use '.' (dot) for class and use '#' for id*/
+#container {
+    background-color: rgb(30, 255, 0);
+    width: 400px;
+    height: 650px;
+    margin: 40px auto 0px;/*first value is for top, second value is for left and right, third value for bottom*/
+    padding: 50px;
+    box-sizing: border-box;/* it uses so that box does not effected by padding, border and many more things which effect the size of box*/
+    background-color: beige;
+    box-shadow: 0px 10px 15px -8px #000;/* first value = shade in x axis, second value = shade in y axis, third value = how much blur in px, fifth value = color to shadow*/
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.92;/*using this we can see through container box according to the values*/
+    
+}
+
+h1 {
+    margin: 0px 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+}
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;/* make block of each label seperatly*/
+    margin: 25px 0px;
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 8px;/* single value is for all side of text*/
+    margin: 10px 0;
+}
+
+form input[type="text"]/*select the attribute of tag*/ {
+    width: 90px;/*to decrease the text space*/
+}
+
+button {
+    background: #6c2726;
+    color: white;
+    border: none;
+    border-bottom: solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 60px;
+    transition:  0.2s ease;/*give animation to the button*/
+}
+
+button:hover {/*while going on botton the color of button gets change and color of bottom border also change*/
+    background: #4c2827;
+    border-bottom-color: #111;
+    font-size: 20px;/* size of text change from 18px to 20px in animation while touch the button */
+}
+
+button:active {/* on clicking the colur of button change for a sec to blue and potion of button shift to 1px relatively to the initial position*/
+    background: #333;
+    position: relative;
+    top: 2px;
+}
+
+#totaltip {
+    font-size: 50px;
+    margin-top: 40px;/*diatace of totaltip div from top div is 40px*/
+}
+
+
+#totaltip:before {
+    content: "tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+#rs {
+    font-size: 24px;
+    bottom: 18px;
+    display: inline;
+    padding: 0 5px;
+}
+
+#each {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;/* it make the each start from new line, it convert the each into block it means every block content starts from new line ex. paragraph, heading etc.*/
+}

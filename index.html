@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>tip calculator</title>
+        <!-- normalize.css -->
+        <link rel="stylesheet" href="text/css" href="normalize.css">
+
+        <!-- custom style -->
+        <link rel="stylesheet"  href="style.css">
+    </head>
+
+    <body>
+        
+        <div id="container">
+            <h1>Tip Calculator</h1>
+            <div id="calculator">
+
+                <form>
+                    <label>
+                        How much was your bill?<br>
+                        Rs <input type="text" id="billamount">
+                    </label>
+                    <label>
+                        How was your service?<br>
+                        <select id="servicequality">
+                            <option disabled selected value="0">-- choose an option --</option>
+                            <option value="0.3">30% - outstanding</option>
+                            <option value="0.2">20% - good</option>
+                            <option value="0.15">15% - It was okay</option>
+                            <option value="0.1">10% - Bad</option>
+                            <option value="0.05">5% - Terrible</option>
+                        </select>
+                    </label>
+                    <label><!-- if click on text then input part is selected thats why it is use -->
+                        How many people are sharing the bill?<br>
+                        <input type="text" id="totalpeople"> Person
+                    </label>
+                    <button type="button" id="calculate">calculate</button>
+                </form>
+
+            </div><!-- calculator-->
+            <div id="totaltip">
+                <small id="rs">Rs</small><span id="tip">0.00</span><!-- there is no difference in text while using span but it use for only styling using css or we can style in html only -->
+                <small id="each">each</small><!-- to make small letter -->
+            </div>
+        </div><!-- container -->
+        <script type="text/javascript" src="script.js">   
+        </script>
+    </body>
+</html>
